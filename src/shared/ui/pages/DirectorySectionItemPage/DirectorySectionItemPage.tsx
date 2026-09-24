@@ -1,6 +1,6 @@
 import styles from './DirectorySectionItemPage.module.css';
 import { SectionCards } from '@/shared/ui/widgets/SectionCards';
-import { getGenitive } from '@/utils/russian';
+import { getGenitive } from '@/shared/helpers/helpersFunction';
 import { Comments } from '@/shared/ui/widgets/Comments';
 import { Mailing } from '@/shared/ui/widgets/Mailing';
 import { useParams, Link } from 'react-router-dom';

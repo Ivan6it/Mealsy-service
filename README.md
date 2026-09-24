@@ -1,73 +1,95 @@
-# React + TypeScript + Vite
+# Mealsy‑service — кулинарный сайт с рецептами
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-сайт с рецептами, который помогает быстро находить идеи для завтрака, обеда и ужина.
 
-Currently, two official plugins are available:
+## О проекте
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Проект представляет собой современный кулинарный сайт с коллекцией рецептов.
+Пользователь может просматривать рецепты, знакомиться с ингредиентами и пошаговым способом приготовления.
 
-## React Compiler
+Сайт создан с целью потренироваться в разработке веб-интерфейсов и работе с данными, а также сделать удобный и приятный сервис для любителей готовить.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Возможности
 
-## Expanding the ESLint configuration
+- Просмотр рецептов
+- Категории блюд
+- Подробное описание каждого рецепта
+- Список ингредиентов
+- Пошаговый способ приготовления
+- Удобный и понятный интерфейс
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Технологии
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+В проекте используются:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Frontend
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- React
+- Vite
+- React Router
+- Redux Toolkit
+- React Redux
+- React DatePicker
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js
+- Busboy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Запуск проекта
+
+### 1. Клонировать репозиторий:
+
+git clone https://github.com/Ivan6it/Mealsy-service.git
+
+### 2. Перейти в папку проекта:
+
+cd Mealsy-service
+
+### 3. Установить зависимости:
+
+npm install
+
+### 4. Запустить проект:
+
+npm run server
+npm run dev
+
+После этого сайт будет доступен по адресу, который покажет терминал.
+
+## Структура проекта
+
+public/
+├── images # Изображения фукнциональных компонентов сайта
+├── images/additionalIngredients # Изображения дополнительных ингредиентов
+├── images/Cuisines # Изображения кухонь для фильтрации
+├── images/DirectorySection # Изображения разделов справочника
+├── images/DirectorySectionItem # Изображения подразделов справочника
+├── images/ImageRecipes - Изображения рецептов
+├── images/imageUsers - Изображения пользователей
+
+src/
+├── components/ # Защищенный роут
+├── data/ # Данные о рецептах, фильтрах, юзерах, ингредиентах
+├── shared/fonts # Шрифты
+├── shared/helpers # Вспомогательные функции
+├── shared/styles # Глобальные стили
+├── shared/ui/layouts # Базовое отображение интерфейса
+├── shared/ui/pages # Страницы сайта
+├── shared/ui/widgets # Основные компоненты страниц
+├── store # Слайсы
+├── types # Типизация основных данных
+
+### Цель проекта
+
+Основная цель проекта — создать удобный каталог рецептов и одновременно получить практический опыт разработки современного веб-приложения.
+
+### Автор
+
+Салыкин Иван
+
+GitHub: https://github.com/Ivan6it

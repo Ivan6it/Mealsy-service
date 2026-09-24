@@ -15,8 +15,8 @@ import {
   WhatsappIcon,
 } from '@/shared/ui/icons';
 import { IconActive } from '@/shared/ui/iconActive';
-import { TagInTheRecipe } from '@/shared/ui/tagInTheRecipe';
-import { AdditionalIngredientsItem } from '@/shared/ui/AdditionalIngredientsItem';
+import { TagInTheRecipe } from '@/shared/ui/widgets/tagInTheRecipe';
+import { AdditionalIngredientsItem } from '@/shared/ui/widgets/AdditionalIngredientsItem';
 import { DefaultButton } from '@/shared/ui/buttons/defaultButton';
 import { useState, useEffect, useRef } from 'react';
 import { ShopList } from '@/shared/ui/widgets/ShopList';

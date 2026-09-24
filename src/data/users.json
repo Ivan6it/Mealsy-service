@@ -365,7 +365,7 @@
     "gender": "none",
     "birthday": null,
     "liked": [],
-    "agreement": false,
+    "agreement": true,
     "cookbooks": [],
     "shoppinglist": [],
     "stars": []
